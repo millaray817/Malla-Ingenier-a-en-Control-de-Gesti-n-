@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Interactiva - Ingeniería en Control de Gestión</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Malla Interactiva - Ingeniería en Control de Gestión</h1>
+
+  <!-- 🔹 Trimestre 1 -->
+  <div class="trimestre">
+    <div class="titulo">1° Trimestre</div>
+    <div class="ramos">
+      <div class="ramo no-aprobado" id="ramo1">Pensamiento Matemático</div>
+      <div class="ramo no-aprobado" id="ramo2">Fundamentos de Contabilidad</div>
+      <div class="ramo no-aprobado" id="ramo3">Taller de Habilidades Comunicativas</div>
+      <div class="ramo no-aprobado" id="ramo4">Fundamentos de Control de Gestión</div>
+      <div class="ramo no-aprobado" id="ramo5">Fundamentos de Microeconomía</div>
+    </div>
+  </div>
+
+  <!-- 🔹 Trimestre 2 -->
+  <div class="trimestre">
+    <div class="titulo">2° Trimestre</div>
+    <div class="ramos">
+      <div class="ramo bloqueado" id="ramo6" data-prereq="ramo1">Matemáticas para los Negocios</div>
+      <div class="ramo bloqueado" id="ramo7" data-prereq="ramo2">Laboratorio de Contabilidad y Costos</div>
+      <div class="ramo bloqueado" id="ramo8" data-prereq="ramo5">Microeconomía</div>
+      <div class="ramo no-aprobado" id="ramo9">Inglés I</div>
+    </div>
+  </div>
+
+  <!-- 🔹 Trimestre 3 -->
+  <div class="trimestre">
+    <div class="titulo">3° Trimestre</div>
+    <div class="ramos">
+      <div class="ramo bloqueado" id="ramo10" data-prereq="ramo6">Fundamentos de Business Analytics</div>
+      <div class="ramo bloqueado" id="ramo11" data-prereq="ramo7">Laboratorio de Metodologías Contables</div>
+      <div class="ramo bloqueado" id="ramo12" data-prereq="ramo8">Macroeconomía</div>
+      <div class="ramo bloqueado" id="ramo13" data-prereq="ramo9">Inglés II</div>
+      <div class="ramo no-aprobado" id="ramo14">Taller de Competencias Digitales</div>
+    </div>
+  </div>
+
+  <!-- 🔹 Trimestre 4 -->
+  <div class="trimestre">
+    <div class="titulo">4° Trimestre</div>
+    <div class="ramos">
+      <div class="ramo bloqueado" id="ramo15" data-prereq="ramo10">Estadística aplicada a Business Analytics</div>
+      <div class="ramo bloqueado" id="ramo16" data-prereq="ramo11">Costos para la Toma de Decisiones</div>
+      <div class="ramo bloqueado" id="ramo17" data-prereq="ramo12">Econometría Aplicada</div>
+      <div class="ramo bloqueado" id="ramo18" data-prereq="ramo13">Inglés III</div>
+      <div class="ramo bloqueado" id="ramo19" data-prereq="ramo4">Gestión del Talento</div>
+    </div>
+  </div>
+
+  <!-- 🔹 Trimestre 5 -->
+  <div class="trimestre">
+    <div class="titulo">5° Trimestre</div>
+    <div class="ramos">
+      <div class="ramo bloqueado" id="ramo20" data-prereq="ramo15">Modelos Predictivos en Negocios</div>
+      <div class="ramo bloqueado" id="ramo21" data-prereq="ramo16">Laboratorio de Aplicación de Impuestos</div>
+      <div class="ramo bloqueado" id="ramo22" data-prereq="ramo18">Inglés IV</div>
+      <div class="ramo bloqueado" id="ramo23" data-prereq="ramo19">Planificación Estratégica</div>
+      <div class="ramo no-aprobado" id="ramo24">Taller de Sostenibilidad</div>
+    </div>
+  </div>
+
+  <!-- 🔹 Trimestre 6 -->
+  <div class="trimestre">
+    <div class="titulo">6° Trimestre</div>
+    <div class="ramos">
+      <div class="ramo bloqueado" id="ramo25" data-prereq="ramo20">Analítica Estratégica de Datos</div>
+      <div class="ramo bloqueado" id="ramo26" data-prereq="ramo21">Sistemas de Información Contable</div>
+      <div class="ramo bloqueado" id="ramo27" data-prereq="ramo23">Modelos de Control de Gestión</div>
+      <div class="ramo no-aprobado" id="ramo28">Laboratorio de Habilidades Profesionales</div>
+    </div>
+  </div>
+
+  <!-- 🔹 Trimestre 7 -->
+  <div class="trimestre">
+    <div class="titulo">7° Trimestre</div>
+    <div class="ramos">
+      <div class="ramo bloqueado" id="ramo29" data-prereq="ramo25">Business Analytics</div>
+      <div class="ramo bloqueado" id="ramo30" data-prereq="ramo26">Financial Reporting</div>
+      <div class="ramo bloqueado" id="ramo31" data-prereq="ramo27">Auditoría y Control Interno</div>
+      <div class="ramo bloqueado" id="ramo32" data-prereq="ramo4">Derecho para los Negocios</div>
+    </div>
+  </div>
+
+  <!-- 🔹 Trimestre 8 -->
+  <div class="trimestre">
+    <div class="titulo">8° Trimestre</div>
+    <div class="ramos">
+      <div class="ramo bloqueado" id="ramo33" data-prereq="ramo29">Laboratorio de Evaluación de Proyectos</div>
+      <div class="ramo bloqueado" id="ramo34" data-prereq="ramo30">Gestión Financiera</div>
+      <div class="ramo bloqueado" id="ramo35" data-prereq="ramo31">Auditoría de Estados Financieros</div>
+      <div class="ramo bloqueado" id="ramo36" data-prereq="ramo32">Fundamentos Tributarios</div>
+    </div>
+  </div>
+
+  <!-- 🔹 Trimestre 9 -->
+  <div class="trimestre">
+    <div class="titulo">9° Trimestre</div>
+    <div class="ramos">
+      <div class="ramo bloqueado" id="ramo37" data-prereq="ramo33">Laboratorio de Consultoría de Empresas</div>
+      <div class="ramo bloqueado" id="ramo38" data-prereq="ramo34">Finanzas Corporativas</div>
+      <div class="ramo bloqueado" id="ramo39" data-prereq="ramo35">Auditoría de Sistemas de Información</div>
+      <div class="ramo bloqueado" id="ramo40" data-prereq="ramo36">Derecho Tributario</div>
+    </div>
+  </div>
+
+  <!-- 🔹 Trimestre 10 -->
+  <div class="trimestre">
+    <div class="titulo">10° Trimestre</div>
+    <div class="ramos">
+      <div class="ramo bloqueado" id="ramo41" data-prereq="ramo37">Electivo de Micro Máster I</div>
+      <div class="ramo bloqueado" id="ramo42" data-prereq="ramo38">Herramientas de Gestión y Sostenibilidad</div>
+      <div class="ramo bloqueado" id="ramo43" data-prereq="ramo39">Gestión de Empresas Sostenibles</div>
+      <div class="ramo bloqueado" id="ramo44" data-prereq="ramo40">Gestión Tributaria</div>
+    </div>
+  </div>
+
+  <!-- 🔹 Trimestre 11 -->
+  <div class="trimestre">
+    <div class="titulo">11° Trimestre</div>
+    <div class="ramos">
+      <div class="ramo bloqueado" id="ramo45" data-prereq="ramo41">Electivo de Micro Máster II</div>
+      <div class="ramo bloqueado" id="ramo46" data-prereq="ramo42">Laboratorio de Gestión de Procesos de Negocio Sostenible</div>
+      <div class="ramo bloqueado" id="ramo47" data-prereq="ramo43">Sistemas de Información para la Gestión Empresarial</div>
+    </div>
+  </div>
+
+  <!-- 🔹 Trimestre 12 -->
+  <div class="trimestre">
+    <div class="titulo">12° Trimestre</div>
+    <div class="ramos">
+      <div class="ramo bloqueado" id="ramo48" data-prereq="ramo45">Electivo de Micro Máster III</div>
+      <div class="ramo bloqueado" id="ramo49" data-prereq="ramo46">Gestión del Talento Avanzada</div>
+      <div class="ramo bloqueado" id="ramo50" data-prereq="ramo47">Analítica Estratégica Avanzada</div>
+    </div>
+  </div>
+
+  <!-- 🔹 Trimestre 13 -->
+  <div class="trimestre">
+    <div class="titulo">13° Trimestre</div>
+    <div class="ramos">
+      <div class="ramo bloqueado" id="ramo51" data-prereq="ramo48">Electivo de Micro Máster IV</div>
+      <div class="ramo bloqueado" id="ramo52" data-prereq="ramo49">Laboratorio de Herramientas Digitales</div>
+      <div class="ramo bloqueado" id="ramo53" data-prereq="ramo50">Gestión Avanzada de Control</div>
+    </div>
+  </div>
+
+  <!-- 🔹 Trimestre 14 -->
+  <div class="trimestre">
+    <div class="titulo">14° Trimestre</div>
+    <div class="ramos">
+      <div class="ramo bloqueado" id="ramo54" data-prereq="ramo51">Electivo de Micro Máster V</div>
+      <div class="ramo bloqueado" id="ramo55" data-prereq="ramo52">Gestión Estratégica Integrada</div>
+      <div class="ramo bloqueado" id="ramo56" data-prereq="ramo53">Auditoría y Compliance</div>
+    </div>
+  </div>
+
+  <!-- 🔹 Trimestre 15 -->
+  <div class="trimestre">
+    <div class="titulo">15° Trimestre</div>
+    <div class="ramos">
+      <div class="ramo bloqueado" id="ramo57" data-prereq="ramo54">Electivo de Micro Máster VI</div>
+      <div class="ramo bloqueado" id="ramo58" data-prereq="ramo55">Práctica Profesional</div>
+      <div class="ramo bloqueado" id="ramo59" data-prereq="ramo56">Trabajo Final de Titulación</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
